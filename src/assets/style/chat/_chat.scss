@@ -1,0 +1,83 @@
+#chat {
+    height: 100%;
+    background: #ffffff;
+    position: relative;
+
+    .wrapper-chat {
+        padding: 12px;
+        font-size: 14px;
+
+        ul.my-message {
+            list-style-type: none;
+
+            & > li {
+                padding: 2px 0px;
+                margin-bottom: 10px;
+                border-radius: 26px;
+                position: relative;
+                display: flex;
+
+                &:hover {
+                    background: #f0faff;
+                }
+
+                .avatar {
+                    width: 42px;
+                    height: 42px;
+
+                    img {
+                        width: 42px;
+                        height: 42px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        -o-object-position: center;
+                        object-position: center;
+                    }
+                }
+
+                .message-body {
+                    p {
+                        padding: 0 12px;
+
+                        &.name {
+                            font-weight: bold;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .writing-block {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 8px 0 20px;
+        border-top: 1px solid #f7f8fc;
+        display: grid;
+        grid-template-areas:
+        "inputBlock actionButtons"
+        "btnSend btnSend";
+        grid-template-rows: 50px 30px;
+        grid-template-columns: 1fr 100px;
+        grid-gap: 12px;
+        background: #ffffff;
+
+        .btnSend {
+            padding: 12px;
+            grid-area: btnSend;
+            
+            button {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 900;
+                letter-spacing: .5px;
+                color: #2e78b3;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

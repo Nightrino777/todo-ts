@@ -1,0 +1,20 @@
+@import './layout/layout';
+@import './header/header';
+@import './layout/chatLayout';
+@import './chat/chat';
+@import './chat/actionButtons';
+@import './navbar/navbar';
+@import './lib/input';
+@import './lib/dropdown';
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #f6f7f8;
+}

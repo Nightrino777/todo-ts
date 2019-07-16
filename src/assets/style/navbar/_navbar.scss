@@ -1,0 +1,47 @@
+#leftNavbar {
+    background: #f0faff;
+    height: 100%;
+
+    ul {
+        list-style-type: none;
+        font-size: 14px;
+
+        li {
+            cursor: pointer;
+            
+            &.active {
+                background: #e6f0ff;
+            }
+            padding: 12px;
+            display: grid;
+            grid-template-columns: 42px 162px;
+            grid-gap: 7px;
+
+            .avatar {
+                width: 42px;
+                height: 42px;
+
+                img {
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    -o-object-position: center;
+                    object-position: center;
+                }
+            }
+            .friend-info {
+                .nickname {
+                    font-weight: 600;
+                }
+                .last-message {
+                    padding-top: 10px;
+                    padding-right: 6px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.action-buttons {
+    margin-top: 20px;
+    grid-area: actionButtons;
+
+    button {
+        margin: 6px;
+        color: #2e78b3;
+    }
+    .audio-block {
+        position: absolute;
+        left: 0;
+        top: -260px;
+    }
+}
